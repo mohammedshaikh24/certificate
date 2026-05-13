@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zi Project Certificate</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .certificate-container {
+            background-color: #FFFDF8; /* Soft off-white matching the Zi logo */
+            width: 1050px;
+            height: 742px; /* A4 Landscape proportions */
+            padding: 40px;
+            box-sizing: border-box;
+            border: 15px solid #FFC13B; /* Zi Yellow */
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .inner-border {
+            border: 2px solid #FFC13B;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .logo-container img {
+            width: 120px;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .title {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: #333;
+            margin: 10px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        .presented-to {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .names {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            color: #FFC13B;
+            font-weight: 600;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .university {
+            font-size: 14px;
+            color: #777;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        .company-info {
+            text-align: left;
+            font-size: 12px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .company-info strong {
+            color: #333;
+        }
+
+        .signature-block {
+            text-align: center;
+        }
+
+        .signature-line {
+            width: 250px;
+            border-bottom: 1px solid #333;
+            margin-bottom: 8px;
+            height: 60px; /* Space for placing the signature image */
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* You can replace this placeholder with an actual cropped image of the signature */
+        .signature-image {
+            max-height: 70px;
+            position: absolute;
+            bottom: 5px;
+        }
+
+        .signature-name {
+            font-weight: 700;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .signature-title {
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Print Settings */
+        @media print {
+            body { background: none; }
+            .certificate-container { box-shadow: none; border-width: 10px; }
+            @page { size: A4 landscape; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="certificate-container">
+        <div class="inner-border">
+            
+            <div class="header">
+                <div class="logo-container">
+                    <!-- Ensure logo.png is in the same folder as this HTML file -->
+                    <img src="logo.png" alt="Zi Logo">
+                </div>
+                <h1 class="title">Certificate of Completion</h1>
+                <div class="subtitle">Collaborative Industry Project</div>
+            </div>
+
+            <div class="body-content">
+                <div class="presented-to">Proudly presented to</div>
+                <h2 class="names">Mohammed Sikander<br>& Faris Ashfaq</h2>
+                <div class="university">Bath Spa University RAK: BSc (Hons) Creative Computing Yr 2</div>
+                
+                <p class="description">
+                    In recognition of your exceptional technical expertise and collaborative effort in the successful design, development, and delivery of the official website for <strong>Zi</strong>. Your dedication to this industry project is highly appreciated.
+                </p>
+            </div>
+
+            <div class="footer">
+                <div class="company-info">
+                    <strong>Industry Partner:</strong> Zi<br>
+                    <strong>Address:</strong> Al Ras Warehouse, Umm Ramool<br>
+                    <strong>Email:</strong> hadilusman2003@gmail.com<br>
+                    <strong>Contact:</strong> 0507961561
+                </div>
+
+                <div class="signature-block">
+                    <div class="signature-line">
+                        <!-- If you crop the signature from your image, you can add it here -->
+                        <!-- <img src="signature.png" alt="Signature" class="signature-image"> -->
+                    </div>
+                    <div class="signature-name">Abdul Hadil</div>
+                    <div class="signature-title">Authorized Representative, Zi</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
